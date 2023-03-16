@@ -2,7 +2,6 @@
 
 namespace Ikechukwukalu\Dynamicmailconfig;
 
-use Config;
 use Ikechukwukalu\Dynamicmailconfig\Models\UserEmailConfiguration;
 use Illuminate\Support\ServiceProvider;
 
@@ -13,7 +12,7 @@ class MailServiceProvider extends ServiceProvider
         $mailConfig = UserEmailConfiguration::configuredEmail()->first();
 
         if (isset($mailConfig->id)) {
-            Config::set('mail', $mailConfig->getEmailConfig());
+            \Config::set('mail', $mailConfig->getEmailConfig());
         }
     }
 

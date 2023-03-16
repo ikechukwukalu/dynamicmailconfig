@@ -25,11 +25,11 @@ class DynamicMailConfigServiceProvider extends ServiceProvider
 
         $this->publishes([
             self::CONFIG => config_path('dynamicmailconfig.php'),
-        ], 'rp-config');
+        ], 'dmc-config');
 
         $this->publishes([
             self::DB => database_path('migrations'),
-        ], 'rp-migrations');
+        ], 'dmc-migrations');
     }
 
     /**

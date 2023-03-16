@@ -1,4 +1,4 @@
-name: RequirePin Unit Tests
+name: DynamicMailConfig Unit Tests
 
 on:
   push:

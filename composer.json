@@ -1,11 +1,13 @@
 {
     "name": "ikechukwukalu/dynamicmailconfig",
-    "description": "A laravel package that enables each user to send emails through your platform, using their own unique email address and password",
+    "description": "A laravel package that enables each user to send emails through your platform, using their own unique email configuration",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Ikechukwukalu\\Dynamicmailconfig\\": "src/"
+            "Ikechukwukalu\\Dynamicmailconfig\\": "src/",
+            "Ikechukwukalu\\Dynamicmailconfig\\Middleware\\": "src/Middleware/",
+            "Ikechukwukalu\\Dynamicmailconfig\\Models\\": "src/Models/"
         }
     },
     "autoload-dev": {
