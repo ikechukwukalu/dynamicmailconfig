@@ -7,7 +7,7 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/ikechukwukalu/dynamicmailconfig?style=flat-square)](https://packagist.org/packages/ikechukwukalu/dynamicmailconfig)
 [![Licence](https://img.shields.io/packagist/l/ikechukwukalu/dynamicmailconfig?style=flat-square)](https://github.com/ikechukwukalu/dynamicmailconfig/blob/main/LICENSE.md) -->
 
-A simple Laravel package that provides a middleware which will require users to confirm routes utilizing their pin for authentication.
+A laravel package that enables each user to send emails through your platform, using their own unique email configuration.
 
 ## REQUIREMENTS
 
@@ -22,61 +22,30 @@ composer require ikechukwukalu/dynamicmailconfig
 
 - `php artisan vendor:publish --tag=dmc-migrations`
 - `php artisan migrate`
-- Set `REDIS_CLIENT=predis` and `QUEUE_CONNECTION=redis` within your `.env` file.
-- `php artisan queue:work`
 
-## ROUTES
+### Hash Database Fields
 
-### Api routes
+``` shell
+MAIL_FIELDS_HASH=true
+```
 
-- **POST** `api/change/pin`
-- **POST** `api/pin/required/{uuid}`
+### How To Use
 
-### Web routes
+``` php
+use Illuminate\Support\Facades\Route;
 
-- **POST** `change/pin`
-- **POST** `pin/required/{uuid}`
-- **GET** `change/pin`
-- **GET** `pin/required/{uuid?}`
 
-## NOTE
+Route::middleware(['dynamic.mail.config'])->group(function () {
+    Route::post('/', [\namespace\SomethingController::class, 'functionName']);
+});
 
-- To receive json response add `'Accept': 'application/json'` to your headers.
-- To aid your familiarity with this package you can run `php artisan sample:routes` to scaffold routes that will call functions within the `BookController`.
-
-### Sample routes
-
-- **POST** `v1/sample/books`
-- **DELETE** `v1/sample/books{id}`
-- **GET** `create/book`
-
-## HOW IT WORKS
-
-- First, it's like eating candy.
-- The `dynamic.mail.config` middlware should be added to a route or route group.
-- This middleware will arrest all incoming requests.
-- A temporary URL (`pin/required/{uuid}`) is generated for a user to authenticate with the specified input `config(dynamicmailconfig.input)` using their pin.
-- It either returns a `JSON` response with the generated URL or it redirects to a page where a user is required to authenticate the request by entering their pin into a form that will send a **POST** request to the generated URL when submitted.
-
-### Reserved keys for payload
-
-- `_uuid`
-- `_pin`
-- `expires`
-- `signature`
+Route::post('/', [\namespace\SomethingController::class, 'functionName'])->middleware('dynamic.mail.config');
+```
 
 ## PUBLISH CONFIG
 
 - `php artisan vendor:publish --tag=dmc-config`
 
-## PUBLISH LANG
-
-- `php artisan vendor:publish --tag=dmc-lang`
-
-## PUBLISH VIEWS
-
-- `php artisan vendor:publish --tag=dmc-views`
-
 ## LICENSE
 
-The RP package is an open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The DMC package is an open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
