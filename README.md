@@ -7,7 +7,7 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/ikechukwukalu/dynamicmailconfig?style=flat-square)](https://packagist.org/packages/ikechukwukalu/dynamicmailconfig)
 [![Licence](https://img.shields.io/packagist/l/ikechukwukalu/dynamicmailconfig?style=flat-square)](https://github.com/ikechukwukalu/dynamicmailconfig/blob/main/LICENSE.md)
 
-A laravel package that enables each user to send emails through your platform, using their own unique email configuration.
+A laravel package that enables each user to send emails through your app using their own unique email configuration.
 
 ## REQUIREMENTS
 
