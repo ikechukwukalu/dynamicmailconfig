@@ -1,4 +1,4 @@
-# REQUIRE PIN
+# DYNAMIC MAIL CONFIG
 
 <!-- [![Latest Version on Packagist](https://img.shields.io/packagist/v/ikechukwukalu/dynamicmailconfig?style=flat-square)](https://packagist.org/packages/ikechukwukalu/dynamicmailconfig)
 [![Quality Score](https://img.shields.io/scrutinizer/quality/g/ikechukwukalu/dynamicmailconfig/main?style=flat-square)](https://scrutinizer-ci.com/g/ikechukwukalu/dynamicmailconfig/)
