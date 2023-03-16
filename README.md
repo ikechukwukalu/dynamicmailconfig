@@ -42,6 +42,10 @@ Route::middleware(['dynamic.mail.config'])->group(function () {
 Route::post('/', [\namespace\SomethingController::class, 'functionName'])->middleware('dynamic.mail.config');
 ```
 
+## NOTE
+
+The default mail configuration will be used if a user does not have a custom mail configuration in place.
+
 ## PUBLISH CONFIG
 
 - `php artisan vendor:publish --tag=dmc-config`

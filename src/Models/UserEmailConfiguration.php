@@ -12,6 +12,8 @@ class UserEmailConfiguration extends Model
     use HasFactory;
 
     protected $hidden = [
+        'name',
+        'address',
         'driver',
         'host',
         'port',
@@ -68,6 +70,16 @@ class UserEmailConfiguration extends Model
         return $this->encryptField('password', $value);
     }
 
+    public function setNameAttribute($value)
+    {
+        return $this->encryptField('name', $value);
+    }
+
+    public function setAddressAttribute($value)
+    {
+        return $this->encryptField('address', $value);
+    }
+
     public function getDriverAttribute($value)
     {
         return $this->decryptField($value);
@@ -94,6 +106,16 @@ class UserEmailConfiguration extends Model
     }
 
     public function getPasswordAttribute($value)
+    {
+        return $this->decryptField($value);
+    }
+
+    public function getNameAttribute($value)
+    {
+        return $this->decryptField($value);
+    }
+
+    public function getAddressAttribute($value)
     {
         return $this->decryptField($value);
     }
