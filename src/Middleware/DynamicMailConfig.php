@@ -3,6 +3,7 @@
 namespace Ikechukwukalu\Dynamicmailconfig\Middleware;
 
 use Closure;
+use Illuminate\Http\Request;
 
 class DynamicMailConfig
 {
