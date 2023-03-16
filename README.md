@@ -42,6 +42,24 @@ Route::middleware(['dynamic.mail.config'])->group(function () {
 Route::post('/', [\namespace\SomethingController::class, 'functionName'])->middleware('dynamic.mail.config');
 ```
 
+### Model
+
+```php
+use Ikechukwukalu\Dynamicmailconfig\Models\UserEmailConfiguration;
+
+protected $hidden = [
+    'name',
+    'address',
+    'driver',
+    'host',
+    'port',
+    'encryption',
+    'username',
+    'password'
+];
+
+```
+
 ## NOTE
 
 The default mail configuration will be used if a user does not have a custom mail configuration in place.
