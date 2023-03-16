@@ -57,7 +57,6 @@ protected $hidden = [
     'username',
     'password'
 ];
-
 ```
 
 ## NOTE
