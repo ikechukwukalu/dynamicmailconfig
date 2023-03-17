@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('encryption');
             $table->string('username');
             $table->string('password');
+            $table->softDeletes();
             $table->timestamps();
         });
     }
