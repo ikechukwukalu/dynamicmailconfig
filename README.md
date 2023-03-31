@@ -3,6 +3,7 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/ikechukwukalu/dynamicmailconfig?style=flat-square)](https://packagist.org/packages/ikechukwukalu/dynamicmailconfig)
 [![Quality Score](https://img.shields.io/scrutinizer/quality/g/ikechukwukalu/dynamicmailconfig/main?style=flat-square)](https://scrutinizer-ci.com/g/ikechukwukalu/dynamicmailconfig/)
 [![Code Quality](https://img.shields.io/codefactor/grade/github/ikechukwukalu/dynamicmailconfig?style=flat-square)](https://www.codefactor.io/repository/github/ikechukwukalu/dynamicmailconfig)
+[![Vulnerability](https://img.shields.io/snyk/vulnerabilities/github/ikechukwukalu/dynamicmailconfig?style=flat-square)](https://security.snyk.io/package/composer/ikechukwukalu%2Fdynamicmailconfig)
 [![Github Workflow Status](https://img.shields.io/github/actions/workflow/status/ikechukwukalu/dynamicmailconfig/dynamicmailconfig.yml?branch=main&style=flat-square)](https://github.com/ikechukwukalu/dynamicmailconfig/actions/workflows/dynamicmailconfig.yml)
 [![Total Downloads](https://img.shields.io/packagist/dt/ikechukwukalu/dynamicmailconfig?style=flat-square)](https://packagist.org/packages/ikechukwukalu/dynamicmailconfig)
 [![Licence](https://img.shields.io/packagist/l/ikechukwukalu/dynamicmailconfig?style=flat-square)](https://github.com/ikechukwukalu/dynamicmailconfig/blob/main/LICENSE.md)

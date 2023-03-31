@@ -1,0 +1,22 @@
+{
+  "name": "dynamicmailconfig",
+  "version": "1.0.0",
+  "description": "[![Latest Version on Packagist](https://img.shields.io/packagist/v/ikechukwukalu/dynamicmailconfig?style=flat-square)](https://packagist.org/packages/ikechukwukalu/dynamicmailconfig) [![Quality Score](https://img.shields.io/scrutinizer/quality/g/ikechukwukalu/dynamicmailconfig/main?style=flat-square)](https://scrutinizer-ci.com/g/ikechukwukalu/dynamicmailconfig/) [![Code Quality](https://img.shields.io/codefactor/grade/github/ikechukwukalu/dynamicmailconfig?style=flat-square)](https://www.codefactor.io/repository/github/ikechukwukalu/dynamicmailconfig) [![Github Workflow Status](https://img.shields.io/github/actions/workflow/status/ikechukwukalu/dynamicmailconfig/dynamicmailconfig.yml?branch=main&style=flat-square)](https://github.com/ikechukwukalu/dynamicmailconfig/actions/workflows/dynamicmailconfig.yml) [![Total Downloads](https://img.shields.io/packagist/dt/ikechukwukalu/dynamicmailconfig?style=flat-square)](https://packagist.org/packages/ikechukwukalu/dynamicmailconfig) [![Licence](https://img.shields.io/packagist/l/ikechukwukalu/dynamicmailconfig?style=flat-square)](https://github.com/ikechukwukalu/dynamicmailconfig/blob/main/LICENSE.md)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ikechukwukalu/dynamicmailconfig.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ikechukwukalu/dynamicmailconfig/issues"
+  },
+  "homepage": "https://github.com/ikechukwukalu/dynamicmailconfig#readme",
+  "dependencies": {
+    "snyk-php-plugin": "^1.9.4"
+  }
+}
