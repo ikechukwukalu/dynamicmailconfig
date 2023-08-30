@@ -1,3 +1,7 @@
-# v1.0.1
+# v1.0.2
 
-Added soft deletes to `user_email_configurations` table
+- Updated packages list in `composer.json`.
+
+## v1.0.1
+
+- Added soft deletes to `user_email_configurations` table
